@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Let's Flip a Coin!
+    </h1>
+    <button>
+      Flip Me!
+    </button>
+    <p>
+      Out of 0 flips, there have been 0 heads and 0 tails.
+    </p>
+  </div>
+</DocumentFragment>
+`;
