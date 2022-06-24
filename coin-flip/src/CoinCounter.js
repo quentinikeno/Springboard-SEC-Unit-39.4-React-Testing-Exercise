@@ -1,4 +1,3 @@
-import React from "react";
 import Coin from "./Coin";
 
 const CoinCounter = ({ sides }) => {
@@ -18,7 +17,7 @@ const CoinCounter = ({ sides }) => {
 	return (
 		<div>
 			<h1>Let's Flip a Coin!</h1>
-			<Coin imgSrc={sides[side]} />
+			<Coin side={side} imgSrc={sides[side]} />
 			<button onClick={handleClick}>Flip Me!</button>
 			<p>
 				Out of {totalFlips} flips, there have been{" "}
