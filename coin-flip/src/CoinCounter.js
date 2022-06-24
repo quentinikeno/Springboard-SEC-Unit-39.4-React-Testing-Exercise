@@ -30,13 +30,10 @@ const CoinCounter = ({ sides }) => {
 
 CoinCounter.defaultProps = {
 	sides: {
-		heads: {
-			imgSrc: "https://tinyurl.com/react-coin-heads-jpg",
-		},
-
-		tails: {
-			imgSrc: "https://tinyurl.com/react-coin-tails-jpg",
-		},
+		heads:
+			"https://bjc.edc.org/June2017/bjc-r/img/5-algorithms/img_flipping-a-coin/Heads.png",
+		tails:
+			"https://bjc.edc.org/June2017/bjc-r/img/5-algorithms/img_flipping-a-coin/Tails.png",
 	},
 };
 
