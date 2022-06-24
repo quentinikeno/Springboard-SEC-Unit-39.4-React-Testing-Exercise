@@ -1,9 +1,10 @@
+import React, { useState } from "react";
 import Coin from "./Coin";
 
 const CoinCounter = ({ sides }) => {
-	const [side, setSide] = null;
-	const [totalFlips, setTotalFlips] = 0;
-	const [totalTails, setTotalTails] = 0;
+	const [side, setSide] = useState(null);
+	const [totalFlips, setTotalFlips] = useState(0);
+	const [totalTails, setTotalTails] = useState(0);
 	const handleClick = () => {
 		if (Math.random() > 0.5) {
 			setSide("tails");
@@ -17,7 +18,7 @@ const CoinCounter = ({ sides }) => {
 	return (
 		<div>
 			<h1>Let's Flip a Coin!</h1>
-			<Coin side={side} imgSrc={sides[side]} />
+			{side !== null && <Coin side={side} imgSrc={sides[side]} />}
 			<button onClick={handleClick}>Flip Me!</button>
 			<p>
 				Out of {totalFlips} flips, there have been{" "}
@@ -27,7 +28,7 @@ const CoinCounter = ({ sides }) => {
 	);
 };
 
-CoinContainer.defaultProps = {
+CoinCounter.defaultProps = {
 	sides: {
 		heads: {
 			imgSrc: "https://tinyurl.com/react-coin-heads-jpg",
